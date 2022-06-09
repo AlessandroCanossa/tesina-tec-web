@@ -1,0 +1,67 @@
+% The FYP template is designed according to NTU SCSE FYP guidelines on https://www3.ntu.edu.sg/scse/fyp/UsefulInfo/Report%20Guide.pdf.
+
+\documentclass[pdftex,12pt]{article}
+\usepackage{newtxtext}
+\usepackage[top=3cm, bottom=3cm, left=3.5cm, right=3cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[pdftex]{graphicx}
+% \usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{titlesec}
+% \usepackage{tocloft}
+% \usepackage{parskip}
+% \usepackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage[sorting=none]{biblatex}
+
+%Italian-specific commands
+%--------------------------------------
+\usepackage[italian]{babel}
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{mate-mati-ca recu-perare}
+
+
+% change the following
+\title{\uppercase{WebComics}}
+\author{Alessandro Canossa - Matricola: 128434}
+\date{2022}
+% \newcommand\degree{}
+
+\begin{document}
+\input{cover.tex}
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\tableofcontents
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+
+\input{capitolo1.tex}
+\break
+
+\input{capitolo2.tex}
+
+\break
+\input{capitolo3.tex}
+
+\break
+\input{capitolo4.tex}
+
+\break
+\input{capitolo5.tex}
+
+\break
+\input{capitolo6.tex}
+
+\break
+\input{capitolo7.tex}
+
+\break
+\input{capitolo8.tex}
+
+\end{document}

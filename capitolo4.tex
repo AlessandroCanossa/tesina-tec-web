@@ -1,0 +1,24 @@
+\section{Organizzazione del software}
+Il progetto è stato diviso in tre app:
+
+\subsection{users}
+Applicazione in cui sono gestiti tutti i dettagli di un utente all’interno del sito;
+qui è salvato il modello che rappresenta un utente, che estende quello base di
+Django aggiungendo maggiori dettagli, e anche il modello che rappresenta gli acquisti di \textit{coins}.
+Inoltre in questa applicazione sono state scritte tutte le views che permettono
+la creazione e la modifica di un utente, oltre che la gestione del login, del logout e del cambio della password.
+
+\subsection{comics}
+In questa app sono presenti tutti i modelli che riguardano i Comic nella loro interezza,
+come il modello \textit{Comic}, che rappresenta un singolo Comic, e il modello \textit{Chapter}
+che rappresenta un singolo capitolo di un Comic, ma anche modelli come \textit{Library} che rappresenta
+la libreria di Comic di un utente.
+\\L'applicazione contiene anche tutta la logica per la creazione dei comic e dei capitoli,
+per la ricerca con filtri dei comic, per la gestione dei voti, per la gestione dei comic in libreria,
+per l'acquisto dei capitoli e la loro visualizzazione.
+
+
+\subsection{comments}
+Questa applicazione si occupa di gestire i soli commenti.
+È stata tenuta separata dalle altre due app siccome in questo modo si ha la possibilità
+di usarla in altri progetti andando a modificare solo poche cose.

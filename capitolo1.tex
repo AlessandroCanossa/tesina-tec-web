@@ -1,0 +1,68 @@
+\section{Requisiti}
+
+Il progetto ha lo scopo di realizzare una web app per la pubblicazione di comics da parte di qualsiasi utente, 
+e permetterne la lettura agli altri utenti a fronte di un pagamento con una moneta virtuale (coins).
+\\Di conseguenza i requisiti dell’applicazione sono:
+
+\subsection{Utenti}
+\begin{itemize}
+    \item \textbf{Anonimo:} Può visualizzare i comics presenti ed effettuare ricerche di vari comics. Può creare un account registrandosi.
+    \item \textbf{Utente:} Può comprare \textit{coins} e acquistare i capitoli dei comics che vuole leggere. 
+    Relativamente ai comics può dare un voto da 1 a 10 e salvarlo nella libreria. 
+    Relativamente ai capitoli: può acquistarli, leggerli, mettere like, commentare e rispondere ai commenti. 
+    Infine può fare richiesta di diventare Creatore.
+    \item \textbf{Creatore:} può creare nuovi comic e caricare i relativi capitoli. Da una pagina apposta può controllare le informazioni dei propri comics, come voto, salvataggi in libreria e visite totali. Infine può aggiornare lo stato dei comics.
+\end{itemize}
+
+
+\subsection{Funzionalità}
+\begin{itemize}
+    \item \textbf{Creazione di comics:}
+          \\Durante la creazione di un comics bisogna fornire:
+          \begin{itemize}
+              \item Immagine di copertina
+              \item Titolo
+              \item Genere (1 o più)
+              \item Sinossi
+          \end{itemize}
+    \item \textbf{Aggiunta di un capitolo:}
+          \\Una volta scelto il comic per cui aggiungere il capitolo, bisogna fornire:
+          \begin{itemize}
+              \item Numero del capitolo
+              \item Immagini del capitolo (1 o più), con i titoli ordinati in senso di lettura.
+          \end{itemize}
+
+    \item \textbf{Commenti:}
+          \\Un utente può scrivere commenti sotto i vari capitoli, eliminarli, oppure rispondere a commenti di altri utenti.
+          Nel profilo personale è visualizzabile l’elenco di tutti i commenti di un utente.
+    \item \textbf{Libreria:}
+          \\Un utente può aggiungere un comic alla propria libreria, rimuoverlo e visualizzare l’intera libreria.
+    \item \textbf{Cronologia di lettura:}
+          \\Un utente può visualizzare e modificare la propria cronologia di lettura.
+    \item \textbf{Rating di un comic:}
+          \\ Un utente può assegnare un voto da 1 a 10 ad un comic. Il voto può anche essere modificato oppure rimosso.
+    \item \textbf{Like ai capitoli:}
+          \\Un utente che ha comprato tale capito può aggiungere o togliere un like ai capitoli che ha comprato.
+
+    \item \textbf{Coins:}
+          \\Nella pagina del market un utente può comprare una quantità di coins a sua scelta.
+    \item \textbf{Registrazione e login:}
+          \\Chiunque può creare un profilo fornendo: username, nome, cognome, email e password.
+    \item \textbf{Diventare creatori:}
+          \\Qualunque utente può diventare creatore mediante un pulsante nelle impostazioni del suo profilo.
+    \item \textbf{Visualizzazione comic:}
+          \\Nella homepage vengono mostrati i comics di cui sono stati aggiunti capitoli recentemente. Nella sezione “serie” è possibile filtrare i comics in questi modi:
+          \begin{itemize}
+              \item Selezionando uno o più generi di comic
+              \item Selezionando uno o più stati di pubblicazione
+              \item Per nome, tramite barra di ricerca
+          \end{itemize}
+          Inoltre i risultati possono essere ordinati per:
+          \begin{itemize}
+              \item Rating
+              \item In ordine alfabetico
+              \item Numero di aggiunte in libreria
+          \end{itemize}
+
+
+\end{itemize}

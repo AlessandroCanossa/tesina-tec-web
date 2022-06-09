@@ -1,0 +1,27 @@
+\section{Scelte effetuate}
+
+\subsection{Viste}
+Le viste sono state realizzate mediante funzioni, invece che classi,
+per la possibilità di personalizzazione di fuzionamento,
+a discapito del possibile utilizzo di mixins.
+Questo ha portato a dover effettuare spesso controlli sui permessi degli utenti.
+
+\subsection{AJAX}
+L'utilizzo di AJAX è stato scelto per la possibilità di gestione dinamica
+di pagine altrimenti statiche. Principalmente è stato utilizzato per bottoni
+e piccoli form che non avrebbe avuto senso gestire con pagine separate.
+
+\subsection{AUTH}
+L'utilizzo di django auth è stato limitato al solo login e logout,
+per evitare di andare a creare pagine superflue, come quella di conferma cambio password.
+\\Per le notifiche di conferma cambio password e altre notifiche simili sono stati utilizzati
+gli \textit{alert} di Javascript in combo con AJAX.
+
+\subsection{Pannello admin}
+Il pannello di gestione dell'admin è stato esteso con funzioni di ricerca e filtraggio per ogni modello presente.
+Questo permette una ricerca più efficiente e una visualizzazione più compatta.
+
+\subsection{Immagini}
+La gestione delle immagini inizialmente si è rivelata abbastanza complicata,
+ma grazie al pacchetto \textit{django-dynamic-image} si è potuto creare dinamicamente
+i path di salvataggio delle immagini, in base a comic e numero di capitolo.

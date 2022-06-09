@@ -1,0 +1,89 @@
+\section{Test eseguiti}
+
+Il progetto non è stato testato nella sua interezza, ma si è testato principalmente l'app users,
+per verificare che le varie viste e il model manger funzionassero a dovere.
+
+\subsection{UserManager}
+\subsubsection{test\_create\_user}
+Test utilizzato per controllare che il nuovo utente sia creato correttamente, con i campi popolati come voluto.
+
+\subsubsection{test\_create\_superuser}
+Test utilizzato per controllare che il nuovo super utente sia creato correttamente, con i campi popolati come voluto.
+
+
+\subsection{UserModel}
+\subsubsection{setUp}
+Funzione che crea l'utente usato per i vari test.
+
+\subsubsection{test\_login}
+Test utilizzato per verificare che il login avvenga correttamente.
+
+\subsubsection{test\_login\_invalid\_credentials}
+Test utilizzato per verificare che il login fallisca con credenziali errate.
+
+\subsubsection{test\_create\_existing\_user}
+Test utilizzato per verificare l'impossibilità di creare un utente con credenziali di un utente già esistente.
+
+\subsubsection{test\_create\_user\_with\_email\_invalid}
+Test utilizzato per verificare l'impossibilità di creare un utente con un indirizzo email non valido.
+
+\subsubsection{test\_create\_user\_with\_username\_invalid}
+Test utilizzato per verificare l'impossibilità di creare un utente con un username non valido.
+
+\subsubsection{test\_create\_user\_with\_email\_and\_username\_invalid}
+Test utilizzato per verificare l'impossibilità di creare un utente con un indirizzo email e un username non validi.
+
+\subsubsection{test\_create\_user\_with\_password\_invalid}
+Test utilizzato per verificare l'impossibilità di creare un utente con una password non valida.
+
+\subsection{UserViews}
+\subsubsection{setUp}
+Funzione che crea l'utente usato per i vari test.
+
+\subsubsection{test\_logout}
+Test utilizzato per verificare che la view di logout riporti alla home page.
+
+\subsubsection{test\_change\_username}
+Test utilizzato per verificare che la view di cambio username cambi correttamente l'username.
+
+\subsubsection{test\_change\_username\_invalid\_username}
+Test utilizzato per verificare che la view di cambio username non cambi l'username con un username non valido.
+
+\subsubsection{test\_change\_username\_invalid\_username\_length}
+Test utilizzato per verificare che la view di cambio username non cambi l'username con un username di lunghezza non valida.
+
+\subsubsection{test\_change\_password}
+Test utilizzato per verificare che la view di cambio password cambi correttamente la password.
+
+\subsubsection{test\_change\_password\_invalid\_old\_password}
+Test utilizzato per verificare che la view di cambio password non cambi la password se la password vecchia inserita è sbagliata.
+
+\subsubsection{test\_buy\_coins}
+Test utilizzato per verificare che la view di acquisto di coins aggiorni correttamente il numero di coins dell'utente.
+
+\subsubsection{test\_buy\_coins\_invalid\_amount}
+Test utilizzato per verificare che la view di acquisto di coins non aggiorni il numero di coins dell'utente se viene inserito un valore negativo.
+
+\subsubsection{test\_buy\_coins\_invalid\_amount\_string}
+Test utilizzato per verificare che la view di acquisto di coins non aggiorni il numero di coins dell'utente se viene inserito un valore non numerico.
+
+\subsubsection{test\_buy\_coins\_invalid\_amount\_zero}
+Test utilizzato per verificare che la view di acquisto di coins non aggiorni il numero di coins dell'utente se viene inserito un valore nullo.
+
+\subsubsection{test\_buy\_coins\_not\_logged}
+Test utilizzato per verificare che la view di acquisto di coins riporti alla pagina di login se l'utente non è loggato.
+
+\subsubsection{test\_buy\_coins\_entry\_created}
+Test utilizzato per verificare che la view di acquisto di coins crei una entry nella tabella delle transazioni.
+
+\subsubsection{test\_buy\_coins\_entry\_created\_invalid\_amount}
+Test utilizzato per verificare che la view di acquisto di coins non crei una entry nella tabella delle transazioni se viene inserito un valore non valido.
+
+\subsubsection{test\_become\_creator}
+Test utilizzato per verificare che la view per diventare creator cambi correttamente il campo is\_creator dell'utente se l'utente è loggato.
+
+\subsubsection{test\_become\_creator\_not\_logged}
+Test utilizzato per verificare che la view per diventare creator non cambi il campo is\_creator dell'utente se l'utente non è loggato.
+
+\subsubsection{test\_become\_creator\_already\_creator}
+Test utilizzato per verificare che la view per diventare creator non cambi il campo is\_creator dell'utente se l'utente è già creator.

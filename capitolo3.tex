@@ -1,0 +1,29 @@
+\section{Tecnologie usate}
+
+\subsection{Backend}
+Per il backend della web app è stato utilizzato il framework web visto a lezione, ovvero Django.
+Si è scelto di adottare questo framework perché permette una grande velocità
+di sviluppo una volta che si è capito il meccanismo di funzionamento. Permette
+anche di astrarre tutte le complessità legate alla gestione di un database e alla
+creazione dinamica dei templates delle pagine con i dati ottenuti dal database.
+\\Per la maggior parte delle viste è stato utilizzato il template engine di Django.
+Ogniuna di tali viste è legata ad un template e gestisce la logica di ottenimento di quello che
+deve essere fatto vedere a schermo e/o la modifica di questi oggetti all’interno
+del database.
+\\Sono state però create anche delle viste che forniscono dei più semplici servizi,
+come per esempio l'aggiunta di un voto ad un comic, le quali restitusicono solo
+messaggi di successo o di errore.
+\\Come database è stato utilizzato \textbf{SQLite3}, siccome è molto leggero,
+l'app non necessita di funzioni di gestione del database particolari e anche perché
+è il database che viene fornito di base da Django.
+
+
+\subsection{Frontend}
+Per la realizzazione del Frontend sono stati usati i template di Django,
+che permettono di creare pagine dinamiche con i dati ottenuti dal database.
+Inoltre forniscono anche la possibilità di creare componenti HTML riutilizzabili
+e la possibilità di estendere pagine con altri template mediante l'utilizzo dei blocchi.
+\\Come libreria grafica è stata utilizzata \textbf{Bootstrap}, per la facilità di
+creazione degli oggetti.
+\\Per la dinamicità delle pagine è stato usato anche \textbf{Javascript}, e in particolare
+\textbf{AJAX}, per la gestione di bottoni e piccoli form, ad esempio per il tasto di voto.
